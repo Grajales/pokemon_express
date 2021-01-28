@@ -7,8 +7,14 @@
 </head>
 <body>
     <h1>Pokemon index page</h1>
-    <nav>
-
-    </nav>
+   
+        <ul class=pokemon>
+            <%pokes.forEach((name, id) => { %> 
+             <li>
+                <%=pokes[id].name%>
+            </li>
+            <% }) %> 
+        </ul>
+    
 </body>
 </html>
