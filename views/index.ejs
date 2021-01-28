@@ -12,7 +12,12 @@
             <%pokemon.forEach((name, id) => { %> 
              <li>
                 <a href="/pokemon/<%=id%>"><%=pokemon[id].name%></a>
-                
+                <!-- ADD DELETE FORM HERE -->
+                <form action="/pokemon/<%=id%>?_method=DELETE" method="POST"> 
+                <input type="submit" value='delete'>
+                </form>
+                <!-- Add edit link here  -->
+			    <a href="/pokemon/<%=id%>/edit">Edit</a>               
             </li>
             <% }) %> 
         </ul>
