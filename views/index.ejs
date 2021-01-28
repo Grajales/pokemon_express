@@ -9,9 +9,10 @@
     <h1>Pokemon index page</h1>
    
         <ul class=pokemon>
-            <%pokes.forEach((name, id) => { %> 
+            <%pokemon.forEach((name, id) => { %> 
              <li>
-                <%=pokes[id].name%>
+                <a href="/pokemon/<%=id%>"><%=pokemon[id].name%></a>
+                
             </li>
             <% }) %> 
         </ul>

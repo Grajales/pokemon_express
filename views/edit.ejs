@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit EJS</title>
+</head>
+<body>
+    <h1>Edit Pokemon Page Using (get route and edit.ejs)</h1>
+    <!-- the index variable name here has to match the /:index name in the server -->
+    <!-- here we are obtaining the index value from the url and placing it in the put method -->
+    <form action="/pokemon/<%=index%>?_method=PUT" method="POST">
+		<!--  NOTE: the form is pre-populated with values for the server-->
+		Name: <input type="text" name="name" value="<%=poke.name%>"/><br/>
+		Img: <input type="text" name="img" value="<%=poke.img%>"/><br/>
+      
+		<input type="submit" name="" value="Submit Changes"/>
+        </form>
+</body>
+</html>
