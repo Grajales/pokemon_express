@@ -1,0 +1,20 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: rgb(166, 186, 199);
+  }
+  h1 {
+    color: rgb(228, 123, 3); 
+  }
+  form {
+    font-family: 'Play', sans-serif; 
+    font-weight: bold;
+    font-size: 130%;
+  }
+  input {
+    font-family: 'Play', sans-serif; 
+    font-weight: bold;
+    font-size: 130%;
+    margin: 10px;
+    cursor: pointer;
+    
+  }

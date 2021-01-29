@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>show</title>
+    <link rel="stylesheet" href="/css/show.css">
 </head>
 <body>
-    <h1> Pokemon show page </h1>
-    The pokemon name is: <%=poke.name%>  <br/>
-    Its imag url is: <%=poke.img%> 
+    <h1> Show page </h1>
+    <h2> The pokemon name is: <span class=pokename>  <%=poke.name%> </span> </h2>  <br/>
+    
+    <img src="<%=poke.img%>"> <br/>
+    <h2> The imag url is:<span class=urlname>  <%=poke.img%> </span> </h2> <br/>
+
   
 
 </body>

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit EJS</title>
+    <link rel="stylesheet" href="/css/edit.css">
 </head>
 <body>
-    <h1>Edit Pokemon Page Using (get route and edit.ejs)</h1>
+    <h1>Pokemon List Editor</h1>
     <!-- the index variable name here has to match the /:index name in the server -->
     <!-- here we are obtaining the index value from the url and placing it in the put method -->
     <form action="/pokemon/<%=index%>?_method=PUT" method="POST">

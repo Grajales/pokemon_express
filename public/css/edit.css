@@ -1,0 +1,11 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: rgb(166, 186, 199);
+  }
+  h1 {
+    color: blueviolet; 
+  }
+  h2 {
+    font-family: 'Play', sans-serif; 
+    /* color: #fff; */
+  }

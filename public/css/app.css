@@ -1,0 +1,11 @@
+body{
+    color:red;
+    
+}
+input, a {
+    font-family: 'Play', sans-serif; 
+    font-size: 130%;
+    margin: 3px;
+    cursor: pointer;
+    
+  }
