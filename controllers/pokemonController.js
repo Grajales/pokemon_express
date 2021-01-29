@@ -47,7 +47,8 @@ router.put('/:index', (req, res) => { //:index is the index of our fruits array 
 //SHOW
 router.get('/:index',(req,res)=>{
     // res.send(pokemon[req.params.index])
-    res.render("show.ejs",{poke:pokemon[req.params.index]})
+	res.render("show.ejs",{poke:pokemon[req.params.index]})
+	index=req.params.index
 });
 
 

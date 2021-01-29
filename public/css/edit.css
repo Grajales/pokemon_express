@@ -9,3 +9,11 @@ body {
     font-family: 'Play', sans-serif; 
     /* color: #fff; */
   }
+  input {
+    font-family: 'Play', sans-serif; 
+    font-weight: bold;
+    font-size: 130%;
+    margin: 10px;
+    cursor: pointer;
+    
+  }
