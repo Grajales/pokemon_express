@@ -8,19 +8,19 @@
     
 </head>
 <body>
-    <h1> Users Profile Page</h1>
+    <h1> Profile of <%=user.name%></h1>
     <!-- html only use a POSt or GET method, as shown below -->
-    <form action="/users/profile/<%=index%>?_method=PUT" method="POST">
+    <form action="/users/profile/<%=user.id%>?_method=PUT" method="POST">
         Name: <input type="text" name="name" value="<%=userInfo.name%>" > <br>
         Username:<input type="text" name="username" value="<%=userInfo.username%>"><br>
         Password <input type="text" name="password" value="<%=userInfo.password%>"><br>
         <input type="submit" value="Edit"><br>
     </form>
-    <form action="/users/<%=index%>?_method=DELETE" method="POST">
+    <form action="/users/<%=user.id%>?_method=DELETE" method="POST">
         <input type="submit" value="Delete User" >   
     </form>
         <!-- express ejs refers to the local 3000, so only the relative path is needed -->
-        <a href="/pokemon"> View All Pokemons </a>
+        <a href="/pokemons"> View All Pokemons </a>
 </body>
 <!-- http://localhost:3000/users/profile/0 -->
 </html>

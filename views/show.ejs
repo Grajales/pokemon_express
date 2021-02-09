@@ -8,14 +8,15 @@
 </head>
 <body>
     <h1> Show page </h1>
-    <h2> The pokemon name is: <span class=pokename>  <%=poke.name%> </span> </h2>  <br/>
+    <h2> The pokemon name is: <span class=pokename>  <%=pokemon.name%> </span> </h2>  <br/>
     
-    <img src="<%=poke.img%>"> <br/>
-    <form action="/pokemon/<%=index%>?_method=DELETE" method="POST">
+    <img src="<%=pokemon.img%>"> <br/>
+    
+    <form action="/pokemons/<%=pokemon.id%>?_method=DELETE" method="POST">
     <input type="submit" value="delete">
     </form>
 
-    <h2> The imag url is:<span class=urlname>  <%=poke.img%> </span> </h2> <br/>
+    <h2> The imag url is:<span class=urlname>  <%=pokemon.img%> </span> </h2> <br/>
 
   
 

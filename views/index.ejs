@@ -10,15 +10,19 @@
     <h1>Pokemon index page</h1>
    
         <ul class=pokemon>
-            <%pokemon.forEach((name, id) => { %> 
+            <%pokemons.forEach((name, id) => { %> 
              <li>
-                <a href="/pokemon/<%=id%>"><%=pokemon[id].name%></a>
+                
+                <a href="/pokemons/<%=pokemons[id].id%>"><%=pokemons[id].name%></a>
+                
                 <!-- ADD DELETE FORM HERE -->
-                <form action="/pokemon/<%=id%>?_method=DELETE" method="POST"> 
+                
+                <form action="/pokemons/<%=pokemons[id].id%>?_method=DELETE" method="POST"> 
                 <input type="submit" value='delete'>
                 </form>
                 <!-- Add edit link here  -->
-			    <a href="/pokemon/<%=id%>/edit">Edit</a>               
+               
+                <a href="/pokemons/<%=pokemons[id].id%>/edit">Edit</a>
             </li>
             <% }) %> 
         </ul>

@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 });
 
 //Controllers and Routes
-app.use("/pokemon", require("./controllers/pokemonController.js"))
+app.use("/pokemons", require("./controllers/pokemonController.js"))
 app.use("/users", require("./controllers/usersController.js"))
 //End Controllers and routes
 //MIDDLEWARE ENDS
