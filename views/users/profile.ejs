@@ -14,6 +14,7 @@
         Name: <input type="text" name="name" value="<%=userInfo.name%>" > <br>
         Username:<input type="text" name="username" value="<%=userInfo.username%>"><br>
         Password <input type="text" name="password" value="<%=userInfo.password%>"><br>
+        Team <input  name="teamId" value="<%=userInfo.teamId%>"><br>
         <input type="submit" value="Edit"><br>
     </form>
     <form action="/users/<%=user.id%>?_method=DELETE" method="POST">
