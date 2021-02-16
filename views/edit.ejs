@@ -14,7 +14,14 @@
 		<!--  NOTE: the form is pre-populated with values for the server-->
 		Name: <input type="text" name="name" value="<%=pokemon.name%>"/><br/>
 		Img: <input type="text" name="img" value="<%=pokemon.img%>"/><br/>
-      
+        <select name="team">
+            <% for ( let i = 0; i < teams.length; i++ ) { let selected = ( i == 0
+            ) ? "selected" : ""; %>
+            <option value="<%=teams[i].id%>" selected
+              ><%=teams[i].name%>
+            </option>
+            <% } %>
+          </select>
 		<input type="submit" name="" value="Submit Changes"/>
         </form>
 </body>

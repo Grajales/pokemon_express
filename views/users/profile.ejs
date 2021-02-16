@@ -8,20 +8,48 @@
     
 </head>
 <body>
-    <h1> Profile of <%=user.name%></h1>
+    <h1> Welcome <%=user.name%></h1>
+    
     <!-- html only use a POSt or GET method, as shown below -->
     <form action="/users/profile/<%=user.id%>?_method=PUT" method="POST">
-        Name: <input type="text" name="name" value="<%=userInfo.name%>" > <br>
-        Username:<input type="text" name="username" value="<%=userInfo.username%>"><br>
-        Password <input type="text" name="password" value="<%=userInfo.password%>"><br>
-        Team <input  name="teamId" value="<%=userInfo.teamId%>"><br>
-        <input type="submit" value="Edit"><br>
+        Name: <input type="text" name="name" value="<%=user.name%>" > <br>
+        Username:<input type="text" name="username" value="<%=user.username%>"><br>
+        Password <input type="text" name="password" value="<%=user.password%>"><br>
+       
+
+        Team:
+
+
+        <ul>
+            <% for (let i = 0; i < user.Pokemons.length; i++) { %>
+              <li>
+                <option value="<%=teams[i].id%>" selected><%=teams[i].name%> </option>
+                
+              </li>
+              <br>
+              <% } %>
+          </ul>
+  
+        <br />
+        <br />
+
+
+        <input type="submit" value="Edit Profile"><br>
     </form>
     <form action="/users/<%=user.id%>?_method=DELETE" method="POST">
         <input type="submit" value="Delete User" >   
     </form>
         <!-- express ejs refers to the local 3000, so only the relative path is needed -->
         <a href="/pokemons"> View All Pokemons </a>
+        <h3>Pokemon added by you:</h3>
+        <% for (let i = 0; i < user.Pokemons.length; i++){ %>
+        <li>
+          <%=user.Pokemons[i].name%></a>
+        </li>
+        <br />
+        <% } %>
+    
+        <br /><br />
 </body>
 <!-- http://localhost:3000/users/profile/0 -->
 </html>
