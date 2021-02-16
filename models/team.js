@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
  
     static associate(models) {
       Team.hasMany(models.User, { foreignKey: 'teamId' })
+
     }
   };
   Team.init({

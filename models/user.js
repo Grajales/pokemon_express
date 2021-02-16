@@ -6,12 +6,8 @@ module.exports = (sequelize, DataTypes) => {
   class User extends Model {
 
     static associate(models) {
+      User.hasMany(models.Pokemon, { foreignKey: "userId" });
       User.belongsTo(models.Team, { foreignKey: 'teamId' })
-      User.belongsToMany(models.Pokemon, {
-        through: 'PlayerPokemon',
-        foreignKey: 'userId',
-        otherKey: 'pokemonId'
-      });
     }
   };
   User.init({

@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   PlayerPokemon.init({
-    userId: DataTypes.INTEGER,
+    teamId: DataTypes.INTEGER,
     pokemonId: DataTypes.INTEGER
   }, {
     sequelize,

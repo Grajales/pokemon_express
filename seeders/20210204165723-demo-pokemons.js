@@ -10,7 +10,8 @@ module.exports = {
       },
       {
         name: "Ivysaur",
-        img: "http://img.pokemondb.net/artwork/ivysaur.jpg"
+        img: "http://img.pokemondb.net/artwork/ivysaur.jpg",
+        userId: 1
       },
       {
         name: "Venusaur",
@@ -18,19 +19,23 @@ module.exports = {
       },
       {
         name: "Charmander",
-        img: "http://img.pokemondb.net/artwork/charmander.jpg"
+        img: "http://img.pokemondb.net/artwork/charmander.jpg",
+        userId: 2
       },
       {
         name: "Charizard",
-        img: "http://img.pokemondb.net/artwork/charizard.jpg"
+        img: "http://img.pokemondb.net/artwork/charizard.jpg",
+        userId: 3
       },
       {
         name: "Squirtle",
-        img: "http://img.pokemondb.net/artwork/squirtle.jpg"
+        img: "http://img.pokemondb.net/artwork/squirtle.jpg",
+        userId: 1
       },
       {
         name: "Wartortle",
-        img: "http://img.pokemondb.net/artwork/wartortle.jpg"
+        img: "http://img.pokemondb.net/artwork/wartortle.jpg",
+        userId: 2
       },
     ],
     {}
